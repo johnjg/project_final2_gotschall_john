@@ -12,6 +12,10 @@ html {
     max-width: 1200px;
 }
 
+.site-container {
+    max-width: 1200px;
+}
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -26,7 +30,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #050505 url("../img/background.jpg") repeat;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #5b5b5b;
@@ -65,4 +68,96 @@ ol {
 
 a {
     color: #0000ff;
+}
+
+#wrapper {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #76674e;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+#header {
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+/* Logo */
+
+#logo {
+    padding-top: 10px;
+}
+
+
+/* Menu */
+
+.menu {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+}
+
+.menu a {
+    display: block;
+    line-height: 50px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #45698e;
+    border: none;
+    background-color: #d4cec4;
+}
+
+.menu a:hover,
+.menu .current_page_item a {
+    background-color: #45698e;
+    text-decoration: none;
+    color: #d4cec4;
+}
+
+@media all and (min-width: 600px) {
+    nav li {
+        display: inline-block;
+        width: 50%;
+    }
+}
+@media all and (min-width: 850px) {
+    nav li {
+        width: calc(100% / 3);;
+    }
+}
+@media all and (min-width: 1100px) {
+    nav li {
+        width: calc(100% / 6);;
+    }
+}
+
+/* Banner */
+
+.banner {
+    margin: 0 auto;
+    background: url("../img/dropshadow.png") no-repeat left bottom;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
